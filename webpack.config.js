@@ -1,6 +1,8 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,7 +11,11 @@ module.exports = {
     filename: 'main.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  optimization: {
+    minimizer: [new OptimizeCssAssetsPlugin()],
+  },
   plugins: [
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     new HtmlWebpackPlugin({ template: './src/template.html' }),
     new CleanWebpackPlugin(),
   ],
@@ -18,7 +24,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
