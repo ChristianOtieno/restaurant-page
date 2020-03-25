@@ -20,17 +20,17 @@ const selectToggle = (toggleButton) => {
 };
 
 // event handlers
-homeToggle.addEventListener('click', function () {
+homeToggle.addEventListener('click', function home() {
   selectToggle(this);
   homePage();
 });
 
-menuToggle.addEventListener('click', function () {
+menuToggle.addEventListener('click', function menu() {
   selectToggle(this);
   menuPage();
 });
 
-contactToggle.addEventListener('click', function () {
+contactToggle.addEventListener('click', function contact() {
   selectToggle(this);
   contactPage();
 });
