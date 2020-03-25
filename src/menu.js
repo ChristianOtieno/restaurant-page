@@ -53,20 +53,10 @@ const fillMenuTable = () => {
   return menuTable;
 };
 
-const fillMenuImg = () => {
-  const img = document.createElement('img');
-  img.setAttribute('src', './assets/food.jpg');
-
-  return img;
-};
-
 const MenuPage = () => {
   const container = document.createElement('div');
   container.classList.add('menu-container');
-
   const menuTable = fillMenuTable();
-  const menuImg = fillMenuImg();
-  container.appendChild(menuImg);
   container.appendChild(menuTable);
 
   menuContent.classList.add('backdrop');

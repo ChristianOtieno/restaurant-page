@@ -2,19 +2,126 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-body {
+html, body {
   background: url(./assets/food.jpg) no-repeat center center fixed;
   background-size: cover;
   color: wheat;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Comfortaa' !important;
   font-style: italic;
+  font-weight: bolder;
 }
 
 header{
   background-color: rgba(0, 0, 0, 0.5);
   height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  
+  #logo {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1%;
+    margin-left: 10%;
+  }
 }
 
-#home-toggle {
-  color: green;
+
+nav {
+  display: flex;
+  margin-right: 5%;
+  margin-top: 1%;
+
+  .nav-item {
+    position: relative;
+    width: 100px;
+    height: 35px;
+    margin: 0 10px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+  }
+  .nav-item::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    background: white;
+    left: -1px;
+    bottom: -1px;
+    z-index: -1;
+    clip-path: polygon(3% 0, 3% 97%, 100% 97%, 100% 100%, 0 100%, 0 0);
+    transition: width 0.5s;
+  }
+
+  .nav-item.nav-item-selected::before {
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-item:hover::before {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  
+}
+
+#content.backdrop {
+  margin-top: 5%;
+  border: 1px solid #000;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  margin-top: 15%;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  line-height: 3rem;
+}
+
+p {
+  color: white;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-shadow: 1px 2px black;
+}
+
+.backdrop h2 {
+  margin-top:0;
+}
+
+table {
+  border-collapse: separate;
+}
+
+table.menu-table {
+  border-spacing: 30px 30px;
+  margin-left: 50px;
+}
+
+table.menu-table th {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+#contact-toggle{
+  border: 1px solid #000;
 }

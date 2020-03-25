@@ -1,15 +1,15 @@
-const contantContent = document.querySelector('#Content');
+const contantContent = document.querySelector('#content');
 
 
 const contactHeader = (text) => {
-  const contact = document.createElement('h3');
+  const contact = document.createElement('h1');
   contact.textContent = text;
 
   return contact;
 };
 
 const contactDetails = (text) => {
-  const addressDetails = document.createElement('p');
+  const addressDetails = document.createElement('h2');
   addressDetails.innerHTML = text;
 
   return addressDetails;
@@ -23,13 +23,13 @@ const contactNumber = (text) => {
 };
 
 const contactPage = () => {
-  const contact = contactHeader('Contact Us');
-  const addressDetails = contactDetails('foothil 22786 - 3534 riverside drive.');
-  const number = contactNumber('+122345567');
+  const contact = contactHeader('Contact us');
+  const addressDetails = contactDetails('We are located in: <br> Foothil, West, 22786 - 3534, <br> riverside drive.');
+  const number = contactNumber('For deliveries or queries. Call us on: +122345567');
 
 
   contantContent.innerHTML = '';
-  contantContent.classList.remove('backddrop');
+  // contantContent.classList.remove('backddrop');
   contantContent.appendChild(contact);
   contantContent.appendChild(addressDetails);
   contantContent.appendChild(number);
