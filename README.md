@@ -15,7 +15,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/ChristianOtieno/restaurant-page/develop/dist/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ChristianOtieno/restaurant-page/623f181a9384e2605611c932f5cd7f4769b05c95/dist/index.html)
 
 ## Getting Started
 
