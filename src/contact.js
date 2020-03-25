@@ -24,12 +24,11 @@ const contactNumber = (text) => {
 
 const contactPage = () => {
   const contact = contactHeader('Contact us');
-  const addressDetails = contactDetails('We are located in: <br> Foothil, West, 22786 - 3534, <br> riverside drive.');
+  const addressDetails = contactDetails('We are located in: <br> Foothill West, 22786 - 3534, <br> riverside drive.');
   const number = contactNumber('For deliveries or queries. Call us on: +122345567');
 
 
   contantContent.innerHTML = '';
-  // contantContent.classList.remove('backddrop');
   contantContent.appendChild(contact);
   contantContent.appendChild(addressDetails);
   contantContent.appendChild(number);

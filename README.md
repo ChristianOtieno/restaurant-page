@@ -32,7 +32,7 @@ git clone git@github.com:ChristianOtieno/restraunt-page.git
 ### Usage
 
 ```
-run npm install webpack webpack-cli --save-dev
+npm install webpack webpack-cli --save-dev
 ```
 
 > This acrion will install webpack to the node_modules directory of this project.
@@ -46,7 +46,7 @@ npx eslint .
 ### Run the site
 
 ```
-run npm install webpack webpack-cli --save-dev
+npx webpack --watch
 ```
 
 > This action will prepare your site and bundle everything together for you
@@ -57,13 +57,13 @@ run npm install webpack webpack-cli --save-dev
 
 - Github: [@ChristianOtieno](https://github.com/ChristianOtieno)
 - Twitter: [@iamchrisotieno](https://twitter.com/iamchrisotieno)
-- Linkedin: [Christian Otieno](https://linkedin.com/linkedinhandle)
+- Linkedin: [Christian Otieno](https://www.linkedin.com/in/christianotieno/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ChristianOtieno/restraunt-page/issues).
+Feel free to check the [issues page](https://github.com/ChristianOtieno/restaurant-page/issues).
 
 ## Show your support
 
