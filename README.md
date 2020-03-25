@@ -15,7 +15,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/ChristianOtieno/restaurant-page/feature/restraunt/dist/index.html)
+[Live Demo Link](https://raw.githack.com/ChristianOtieno/restaurant-page/develop/dist/index.html)
 
 ## Getting Started
 
