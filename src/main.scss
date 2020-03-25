@@ -3,7 +3,7 @@
 
 
 html, body {
-  background: url(./assets/food.jpg) no-repeat center center fixed;
+  background: url(./assets/restraunt.jpg) no-repeat center center fixed;
   background-size: cover;
   color: wheat;
   font-family: 'Comfortaa' !important;
@@ -78,7 +78,8 @@ nav {
 
 #content.backdrop {
   margin-top: 5%;
-  border: 1px solid #000;
+  border-radius: 35px;
+  // border: 2px solid #000;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -120,8 +121,4 @@ table.menu-table th {
   font-size: 1.5rem;
   font-weight: 600;
   border-radius: 25px;
-}
-
-#contact-toggle{
-  border: 1px solid #000;
 }
