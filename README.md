@@ -4,7 +4,7 @@
 
 ![screenshot](./src/assets/screenshot.png)
 
-Additional description about the project and its features. 
+A summary description of the project and its features illustrated below. 
 
 ## Built With
 
@@ -32,10 +32,10 @@ git clone git@github.com:ChristianOtieno/restraunt-page.git
 ### Usage
 
 ```
-npm install webpack webpack-cli --save-dev
+npm install Webpack Webpack-CLI --save-dev
 ```
 
-> This acrion will install webpack to the node_modules directory of this project.
+> This action will install Webpack to the node_modules directory of this project.
 
 ### Run tests
 
@@ -53,7 +53,7 @@ npx webpack --watch
 
 ## Authors
 
-👤 **Author**
+👤 **Christian Otieno**
 
 - Github: [@ChristianOtieno](https://github.com/ChristianOtieno)
 - Twitter: [@iamchrisotieno](https://twitter.com/iamchrisotieno)
@@ -68,11 +68,6 @@ Feel free to check the [issues page](https://github.com/ChristianOtieno/restaura
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration.
 
 ## 📝 License
 
